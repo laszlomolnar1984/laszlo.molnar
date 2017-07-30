@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="icon" type="image/gif/png" href="images/beerIcon.png">
+	<title>BEERShop - "Legszebb öröm, a söröm"</title>
+	<link rel="stylesheet" type="text/css" href="beers.css">
+	
+</head>
+<body onload="priceGen();">
+<header>
+<div align="center"><img src="images/header.png"></header></div>
+
+<div align="right" class="jobbFelso">
+	<span> pompomBEERs<sup>&copy </sup>&nbsp Ltd. 2017 |</span>
+</div>
+</header>
+
+<div>
+<table class="minden" width="800px" align="center">
+	<thead>
+		<tr>
+			<td><input class="button" type="textbox" id="textBoxSearch" placeholder="Keresendő szöveg" style="width:140px"></td>
+			<td><input class="button" type="button" onclick="kereses();" value="Keresés" style="width:100%"></td>
+			<td><input class="button" type="button" onclick="adminEnter();" value="Belépés" style="width:100%"></td>
+			<td><input class="button" type="button" onclick="contact();" value="Kapcsolat" style="width:100%"></td>
+			<td><input class="button" type="button" onclick="toBottom();" value="Kérdésed van?" style="width:100%"></td>
+		</tr>
+	</thead>
+</table>
+</div>
+<br><br>
+<div class="minden">
+<div style="float: left;" class="divbal">
+<i><b>A kosár tartalma: </i></b><br>
+	<ol id="kosar">
+	<li></li>
+	<li id="kosarDb"></li>
+	</ol>
+	Végösszeg: <span id="vegOsszeg"></span> .- Ft<hr> 
+	<input type="button" value="Megrendelem" onclick="rendelesSend();" class="button">
+	<input type="button" value="Kosár ürítése" onclick="kosarUrit();" class="button">
+	<!--<input type="button" value="Megrendelem" class="button" id="kosarba"> -->
+</div>
+<div style="float: right;" class="divjobb">
+<i><b>Rendezés </i></b><br><br>
+	<form>
+				<input type="radio" name="rendezes" id="arDown">Ár szerint - &darr;</option><br>
+				<input type="radio" name="rendezes"  id="arUp">Ár szerint - &uarr;</option><br>
+				<input type="radio" name="rendezes"  id="alkDown">Alkoholtartalom szerint - &darr;</option><br>
+				<input type="radio" name="rendezes"  id="alkUp">Alkoholtartalom szerint - &uarr;</option><br>
+			</form>
+</div>
+
+<table width="800px" id="myTable">
+	<thead>
+		<tr>
+			<th colspan="5">Aktuális ajánlataink
+			
+			</th>
+		</tr>
+	</thead>	
+	<tbody>
+			<!-- ide jön a generált táblázat az összes elemmel -->
+	</tbody>
+</table>
+</div>
+<br>
+<div align="center" class="kerdes">
+		<p>Kérdésed van? - Írj Nekünk!</p>
+		<p align="right">Neved: <input type="text" class="right" required id="nev"><br></p>
+		<p align="right">e-mail címed: <input type="email" required  id="email"><br></p>
+		<p>Üzenet:</p><textarea rows="5" cols="35"  id="uzenet"></textarea><br><br>
+		<input type="submit" value="Elküld" class="button" onclick="uzenetControl()">
+		<input type="reset" value="Törlés" class="button" onclick="torles()">
+</div>	
+<div align="center" class="minden"><br>
+<a href="#">Ugrás az oldal tetejére!</a>
+</div>
+<script type="text/javascript" src="beers.js">
+</script>
+</body>
+</html>

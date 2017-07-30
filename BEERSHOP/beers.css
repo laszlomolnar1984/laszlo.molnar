@@ -1,0 +1,132 @@
+header
+{
+position:center;
+
+}
+
+.no-scroll::-webkit-scrollbar {display:none;}
+.no-scroll::-moz-scrollbar {display:none;}
+.no-scroll::-o-scrollbar {display:none;}
+.no-scroll::-google-ms-scrollbar {display:none;}
+.no-scroll::-khtml-scrollbar {display:none;}
+
+ul{
+	width: 150px;
+    border-top-left-radius: 4px 4px;
+    border-bottom-left-radius: 4px 4px;
+	margin-left: 83px;
+    border-color:gray;
+    border-width: 1px;
+    border-style:solid;
+	padding: 15px;
+	list-style-type: none;
+}
+
+ol{
+	padding: 15px;
+	list-style-type: none;
+}
+
+.divbal{
+	width: 240px;
+	border-radius: 5px;
+	margin-left: 83px;
+    border-color:gray;
+    border-width: 1px;
+    border-style:solid;
+	padding: 10px;
+	list-style-type: none;
+	background-color: rgb(232, 232, 232);
+	margin-right: 5px;
+}
+
+.divjobb{
+	width: 240px;
+	border-radius: 5px;
+	margin-right: 83px;
+    border-color:gray;
+    border-width: 1px;
+    border-style:solid;
+	padding: 10px;
+	list-style-type: none;
+	background-color: rgb(232, 232, 232);
+	margin-left: 5px;
+}
+
+.jobbFelso{
+	margin-right:355px;
+	font-size: 12px;
+}
+
+
+table { table-layout: fixed; }
+td { 
+	text-align:center; 
+	
+ }
+
+.button{
+	padding:5px;
+	size: 100%;
+	border-radius:5px;
+}
+.button:hover {
+    cursor: pointer;
+	background-color: rgb(200, 200, 200)
+}
+
+tr:nth-child(even) {
+  background-color: rgb(232, 232, 232);
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+th{
+	font-size: 20px;
+	background-color: rgb(232, 232, 232);
+	padding: 10px;
+
+}
+.red{
+	color: rgb(122, 0, 0);
+	font-size: 20px;
+	padding: 15px;
+}
+.italic{
+	font-style: italic;
+	padding: 15px;
+}
+.bold{
+	font-style: bold;
+	font-size: 20px;
+	padding: 15px;
+}
+.smallFont{
+	font-size: 10px;
+	padding: 15px;
+}
+.right{
+	vertical-align:right;
+}
+
+a{
+	text-decoration:none;
+	color: black;
+}
+img.sor{
+	height: 150px;
+}
+
+.kerdes{
+	width: 300px;
+	border-radius: 5px;
+    border-color:gray;
+    border-width: 1px;
+    border-style:solid;
+	padding: 10px;
+	background-color: rgb(232, 232, 232);
+	margin: auto;
+    width: 20%;
+}
